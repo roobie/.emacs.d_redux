@@ -1,6 +1,7 @@
 ;;; Define the list of files to load
-(defvar *load-files* 
-  '(graphical-interface
+(defvar *load-files*
+  '(saner-defaults
+    graphical-interface
     packages))
 
 ;; Load the files in the .emacs.d directory
