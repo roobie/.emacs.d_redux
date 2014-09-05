@@ -27,6 +27,8 @@
                       whole-line-or-region
 
                       yasnippet
+                      eldoc
+                      autopair
 
                       idle-highlight-mode
 

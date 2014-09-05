@@ -35,9 +35,4 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;;; Automatically load changes in file from disc.
-(global-auto-revert-mode t)
-
-(transient-mark-mode t)
-
 (provide 'saner-defaults)
