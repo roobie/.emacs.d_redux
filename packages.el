@@ -19,13 +19,25 @@
 (defvar my-packages '(god-mode
 
                       smex ;; for M-x goodness
+                      ido-ubiquitous
 
+                      dired+
+                      auto-complete
                       whole-line-or-region
 
                       ;; programming specific
-		      paredit ;; lisp
+                      editorconfig
+                      ag
 
+		      ;; lisp
+                      paredit
+                      rainbow-delimiters
+
+                      ;; web
                       js2-mode
+                      emmet-mode
+                      tagedit
+                      highlight-indentation
 
                       niflheim-theme)
   "A list of packages to ensure are installed at launch.")
