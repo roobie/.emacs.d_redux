@@ -26,6 +26,8 @@
 
 (eval-after-load 'js2-mode '(js2-imenu-extras-setup))
 
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+
 (add-to-list 'interpreter-mode-alist (cons "node" preferred-javascript-mode))
 ;; show indentation guides
 (require 'highlight-indentation)

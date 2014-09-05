@@ -8,6 +8,9 @@
     graphical-interface
     packages
     initialise-modes
+
+    auto-complete-configuration
+
     javascript))
 
 ;; Load the files in the .emacs.d directory
@@ -27,3 +30,5 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
+
+(load-theme 'niflheim t)

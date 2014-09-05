@@ -20,11 +20,22 @@
 
                       smex ;; for M-x goodness
                       ido-ubiquitous
+                      idomenu
 
                       dired+
                       sr-speedbar
                       auto-complete
                       whole-line-or-region
+
+                      ;; auto complete
+                      auto-complete
+                      ac-dabbrev
+                      ac-emmet
+                      ac-etags
+                      ac-helm
+                      ac-js2
+
+                      discover
 
                       yasnippet
                       eldoc
@@ -47,6 +58,7 @@
 
                       ;; web
                       js2-mode
+                      js2-refactor
                       emmet-mode
                       tagedit
                       highlight-indentation

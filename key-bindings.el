@@ -16,6 +16,9 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+(global-set-key (kbd "M-<up>") 'move-text-up)
+(global-set-key (kbd "M-<down>") 'move-text-down)
+
 (global-set-key [?\C-c ?d] 'duplicate-line)
 
 (provide 'key-bindings)
