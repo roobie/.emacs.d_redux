@@ -4,9 +4,14 @@
 
 (setq inhibit-startup-message t) ;; no splash screen
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
 (global-linum-mode 1)
+
+(show-paren-mode 1)
+
+(menu-bar-mode -1)
+  (when (fboundp 'tool-bar-mode)
+    (tool-bar-mode -1))
+  (when (fboundp 'scroll-bar-mode)
+    (scroll-bar-mode -1))
 
 (provide 'graphical-interface)

@@ -29,7 +29,7 @@
                       yasnippet
 
                       idle-highlight-mode
-                      
+
                       ;; programming specific
                       editorconfig
                       ag

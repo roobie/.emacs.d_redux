@@ -1,6 +1,5 @@
 
 ;;; https://github.com/ralph-moeritz/.emacs.d/
-(setq-default indent-tabs-mode nil) ;; no tabs please
 (prefer-coding-system 'utf-8) ;; prefer utf-8
 (add-hook 'text-mode-hook 'turn-on-auto-fill) ;; auto-fill in text-mode
 (put 'erase-buffer 'disabled nil) ;; enable erase-buffer

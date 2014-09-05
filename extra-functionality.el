@@ -34,4 +34,13 @@
   ;; put the point in the lowest line and return
   (next-line arg))
 
+(autoload 'zap-up-to-char "misc"
+  "Kill up to, but not including ARGth occurrence of CHAR." t)
+
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
+(require 'saveplace)
+(setq-default save-place t)
+
 (provide 'extra-functionality)
