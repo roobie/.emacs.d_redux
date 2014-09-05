@@ -22,16 +22,27 @@
                       ido-ubiquitous
 
                       dired+
+                      sr-speedbar
                       auto-complete
                       whole-line-or-region
 
+                      yasnippet
+
+                      idle-highlight-mode
+                      
                       ;; programming specific
                       editorconfig
                       ag
 
+                      magit
+
+                      mic-paren
+                      move-text
+
 		      ;; lisp
                       paredit
                       rainbow-delimiters
+                      hl-sexp
 
                       ;; web
                       js2-mode
@@ -39,7 +50,8 @@
                       tagedit
                       highlight-indentation
 
-                      niflheim-theme)
+                      niflheim-theme
+                      heroku-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
