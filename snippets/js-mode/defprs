@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : defprs
+# --
+Object.defineProperties(${1:object_to_extend}, {
+  ${2:dprop}: {
+    value: $0
+  }
+});

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : dset
+# --
+${1:name}: {
+  set: function (value) {
+    this._$1 = value$0;
+  }
+}

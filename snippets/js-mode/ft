@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : semi colon terminated func
+# --
+function ($1) {
+  $0;
+};

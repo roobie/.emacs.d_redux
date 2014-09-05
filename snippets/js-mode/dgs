@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+#name : dgs
+# --
+${1:name}: {
+  get: function () {
+    return this._$1$0;
+  },
+  set: function (value) {
+    this._$1 = value;
+  }
+}

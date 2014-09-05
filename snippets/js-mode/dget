@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : dget
+# --
+${1:name}: {
+  get: function () {
+    return this._$1$0;
+  }
+}

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : pr
+# --
+${1:ctor}.prototype.${2:method} = function $1_$2($3) {
+  $0;
+};

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : dprop
+# --
+${1:name}: {
+  value: $0
+}

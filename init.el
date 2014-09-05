@@ -1,6 +1,8 @@
 ;;; Define the list of files to load
 (defvar *load-files*
   '(saner-defaults
+    extra-functionality
+    key-bindings
     graphical-interface
     packages))
 
