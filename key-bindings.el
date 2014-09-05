@@ -7,4 +7,6 @@
 
 (define-key global-map (kbd "C-<tab>") 'other-window)
 
+(global-set-key [?\C-c ?d] 'duplicate-line)
+
 (provide 'key-bindings)
