@@ -38,7 +38,6 @@
 
                       magit
 
-                      mic-paren
                       move-text
 
 		      ;; lisp

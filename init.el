@@ -7,7 +7,8 @@
     key-bindings
     graphical-interface
     packages
-    initialise-modes))
+    initialise-modes
+    javascript))
 
 ;; Load the files in the .emacs.d directory
 (defvar *base-path* (expand-file-name (file-name-directory load-file-name)))

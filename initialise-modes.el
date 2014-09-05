@@ -2,8 +2,8 @@
 (smex-initialize)
 (sr-speedbar-toggle)
 
-(whole-line-or-region-mode 1)
-(auto-complete-mode 1)
+(whole-line-or-region-mode t)
+(auto-complete-mode t)
 
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
@@ -12,5 +12,7 @@
 (global-auto-revert-mode t)
 
 (transient-mark-mode t)
+
+(yas-global-mode t)
 
 (provide 'initialise-modes)
