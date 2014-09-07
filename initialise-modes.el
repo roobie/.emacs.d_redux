@@ -1,5 +1,4 @@
 ;; Global minor modes etc.
-(ido-mode t)
 (smex-initialize)
 (sr-speedbar-toggle)
 
