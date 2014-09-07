@@ -30,6 +30,11 @@
 
 (add-to-list 'interpreter-mode-alist (cons "node" preferred-javascript-mode))
 
+(global-set-key [f5] 'slime-js-reload)
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (slime-js-minor-mode 1)))
+
 (require 'js-comint)
 ;(setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main") ;; Rhino
 (setq inferior-js-program-command

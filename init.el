@@ -9,6 +9,7 @@
     packages
     initialise-modes
 
+    slime-configuration
     auto-complete-configuration
 
     javascript))
