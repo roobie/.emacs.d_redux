@@ -30,16 +30,9 @@
 
 (add-to-list 'interpreter-mode-alist (cons "node" preferred-javascript-mode))
 
-;;; If slime-js works some time:
-;; (global-set-key [f5] 'slime-js-reload)
-;; (add-hook 'js2-mode-hook
-;;           (lambda ()
-;;             (slime-js-minor-mode 1)))
-
 (require 'js-comint)
 ;(setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main") ;; Rhino
-(setq inferior-js-program-command
-      "c:\\js\\js.exe") ;; spidermonkey
+(setq inferior-js-program-command "node --interactive") ;; node
 (add-hook 'js2-mode-hook '(lambda ()
 			    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
 			    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
@@ -50,6 +43,5 @@
 ;; show indentation guides
 (require 'highlight-indentation)
 (add-hook 'js2-mode-hook 'highlight-indentation-mode)
-
 
 (provide 'javascript)
