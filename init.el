@@ -3,10 +3,11 @@
 ;;; Define the list of files to load
 (defvar *load-files*
   '(saner-defaults
+    packages
+
     extra-functionality
     key-bindings
     graphical-interface
-    packages
     initialise-modes
 
     slime-configuration

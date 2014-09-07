@@ -1,5 +1,21 @@
 ;; Global minor modes etc.
-(smex-initialize)
+(ido-mode t)
+
+;;; Smex
+;;(smex-initialize) ;;smex-initialize does not do exactly what we want, so:
+(autoload 'smex "smex"
+  "Smex is a M-x enhancement for Emacs, it provides a convenient interface to
+your recently and most frequently used commands.")
+(global-set-key (kbd "M-x") 'smex)
+(defadvice smex (around space-inserts-hyphen activate compile)
+        (let ((ido-cannot-complete-command
+               `(lambda ()
+                  (interactive)
+                  (if (string= " " (this-command-keys))
+                      (insert ?-)
+                    (funcall ,ido-cannot-complete-command)))))
+          ad-do-it))
+
 (sr-speedbar-toggle)
 
 (whole-line-or-region-mode t)

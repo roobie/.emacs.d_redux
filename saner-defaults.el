@@ -35,4 +35,7 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Remove trailing whitespace just before save.
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
 (provide 'saner-defaults)

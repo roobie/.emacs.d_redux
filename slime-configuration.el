@@ -6,8 +6,9 @@
 (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
 (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
 
-;; Set your lisp system and, optionally, some contribs
+;; Set your lisp system
 ; --> (setq inferior-lisp-program "/opt/sbcl/bin/sbcl")
+;; and, optionally, some contribs
 ; --> (setq slime-contribs '(slime-js))
 
 (provide 'slime-configuration)
