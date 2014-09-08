@@ -59,6 +59,7 @@
                       ;; web
                       js2-mode
                       js2-refactor
+                      js-comint
                       emmet-mode
                       tagedit
                       highlight-indentation

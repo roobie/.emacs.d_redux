@@ -25,6 +25,9 @@
       js2-bounce-indent-p nil
       js2-highlight-level 3)
 
+;; eg. extract function with `C-c r ef'.
+(js2r-add-keybindings-with-prefix "C-c r")
+
 (eval-after-load 'js2-mode '(js2-imenu-extras-setup))
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
