@@ -47,4 +47,5 @@
 (require 'highlight-indentation)
 (add-hook 'js2-mode-hook 'highlight-indentation-mode)
 
+(add-hook 'js2-mode-hook 'hs-minor-mode)
 (provide 'javascript)
