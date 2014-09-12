@@ -19,6 +19,9 @@
 (global-set-key (kbd "M-<up>") 'move-text-up)
 (global-set-key (kbd "M-<down>") 'move-text-down)
 
+(global-set-key (kbd "C-c C-k") 'hs-hide-all)
+(global-set-key (kbd "C-c C-l") 'hs-show-all)
+
 (global-set-key [?\C-c ?d] 'duplicate-line)
 
 (provide 'key-bindings)

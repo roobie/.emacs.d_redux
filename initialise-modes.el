@@ -21,6 +21,8 @@ your recently and most frequently used commands.")
 (whole-line-or-region-mode t)
 (auto-complete-mode t)
 
+(hs-minor-mode t)
+
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 

@@ -3,3 +3,5 @@ elpa
 server
 *~
 *.dat
+local.el
+.mc-lists.el
