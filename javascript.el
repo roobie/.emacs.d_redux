@@ -8,7 +8,14 @@
 (defvar preferred-javascript-indent-level 2)
 
 ;; JSX
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
 
 ;; You can edit user-customizable variables by typing the following command.
 ;;     M-x customize-group [RET] jsx-mode
