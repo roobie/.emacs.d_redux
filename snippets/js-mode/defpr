@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : defprs
+# --
+Object.defineProperty(${1:object_to_extend}, '${2:prop_name}', {
+    value: $0
+  });

@@ -24,6 +24,8 @@ your recently and most frequently used commands.")
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 
+(cua-selection-mode 1)
+
 ;;; Automatically load changes in file from disc.
 (global-auto-revert-mode t)
 

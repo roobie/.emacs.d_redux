@@ -13,6 +13,9 @@
     slime-configuration
     auto-complete-configuration
 
+    syntax
+
+    markup
     javascript))
 
 ;; Load the files in the .emacs.d directory

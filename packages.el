@@ -64,6 +64,8 @@
                       tagedit
                       highlight-indentation
 
+                      ;; colors
+                      color-identifiers-mode
                       niflheim-theme
                       heroku-theme)
   "A list of packages to ensure are installed at launch.")

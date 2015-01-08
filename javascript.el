@@ -41,6 +41,10 @@
                                   unless (eq preferred-javascript-mode (cdr entry))
                                   collect entry)))
 
+;; js-mode
+(add-to-list 'auto-mode-alist '("\\.json\\'" . javascript-mode))
+(setq js-indent-level preferred-javascript-indent-level)
+
 ;; js2-mode
 (add-hook 'js2-mode-hook '(lambda () (setq mode-name "JS2")))
 (setq js2-use-font-lock-faces t
@@ -53,6 +57,35 @@
 
 ;; eg. extract function with `C-c r ef'.
 (js2r-add-keybindings-with-prefix "C-c r")
+
+(defvar js2-semicolon-contexts (list js2-NAME js2-LP js2-SCRIPT js2-CALL js2-BLOCK))
+(defun autopair-js2-maybe-insert-semi-colon (action pair pos-before)
+  "handler for automatically inserting semi-colon at the end of function call."
+  ;; (message "node before is %s" (js2-node-type (js2-node-at-point (- (point) 1))))
+  ;; (message "action is %s" action)
+  ;; (message "pair is %c" pair)
+  ;; (message "context is %s" (buffer-substring-no-properties (point-at-bol) (point-at-eol)))
+  ;; (message "point is %s" (point))
+  (cond ((and (eq action 'opening)
+              (eq pair ?\))
+             (save-excursion
+               (goto-char pos-before)
+               (skip-chars-backward " \t")
+               ;; (message "node is %s." (js2-node-type (js2-node-at-point (point))))
+               (memq (js2-node-type (js2-node-at-point (point))) js2-semicolon-contexts)
+               ))
+         (save-excursion
+           (let ((forward-sexp-function nil))
+             (goto-char pos-before)
+             (forward-sexp))
+           (if (looking-at-p "[^[:graph:]]*$")
+             (insert ";"))))))
+
+(defun redux::js2-mode-setup ()
+  (setq autopair-handle-action-fns
+        (list #'autopair-default-handle-action
+              #'autopair-js2-maybe-insert-semi-colon)))
+(add-hook 'js2-mode-hook 'redux::js2-mode-setup)
 
 (eval-after-load 'js2-mode '(js2-imenu-extras-setup))
 (add-hook 'js2-mode-hook 'ac-js2-mode)

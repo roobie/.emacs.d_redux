@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : anon func
+# --
+function ($1) {
+  $0
+}
