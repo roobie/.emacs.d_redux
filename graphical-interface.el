@@ -1,6 +1,6 @@
 ;;; GUI initialization
 
-(set-face-attribute 'default nil :height 110 :font "DejaVuSansMono")
+(set-frame-font "DejaVu Sans Mono-11")
 
 (setq inhibit-startup-message t) ;; no splash screen
 
