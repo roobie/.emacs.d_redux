@@ -10,6 +10,8 @@
 
 (menu-bar-mode -1)
 
+(blink-cursor-mode 0)
+
 (when (fboundp 'tool-bar-mode)
   (tool-bar-mode -1))
 

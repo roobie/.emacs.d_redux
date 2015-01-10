@@ -10,7 +10,7 @@
     graphical-interface
     initialise-modes
 
-    slime-configuration
+    ;slime-configuration
     auto-complete-configuration
 
     syntax
