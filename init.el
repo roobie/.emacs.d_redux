@@ -9,6 +9,7 @@
     key-bindings
     graphical-interface
     initialise-modes
+    acme-mouse
 
     ;slime-configuration
     auto-complete-configuration
