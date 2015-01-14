@@ -5,3 +5,4 @@ server
 *.dat
 local.el
 .mc-lists.el
+eshell
