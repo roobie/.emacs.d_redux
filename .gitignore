@@ -5,3 +5,7 @@ server
 *.dat
 local.el
 .mc-lists.el
+eshell
+ido.last
+places
+smex-items

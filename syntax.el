@@ -11,6 +11,7 @@
   (set-face-attribute 'font-lock-keyword-face nil :weight 'bold)
   (set-face-attribute 'font-lock-builtin-face nil :weight 'bold)
   (set-face-attribute 'font-lock-preprocessor-face nil :weight 'bold))
+(remove-keyword-highlighting)
 
 
 

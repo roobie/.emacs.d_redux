@@ -45,14 +45,15 @@
 
                       ;; programming specific
                       editorconfig
+                      smartparens
+                      company
                       ag
 
                       magit
 
                       move-text
 
-		      ;; lisp
-                      paredit
+                      ;; lisp
                       rainbow-delimiters
                       hl-sexp
 
@@ -63,6 +64,7 @@
                       emmet-mode
                       tagedit
                       highlight-indentation
+                      web-mode
 
                       ;; colors
                       color-identifiers-mode

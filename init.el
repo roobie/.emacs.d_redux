@@ -15,6 +15,8 @@
 
     syntax
 
+    clojure
+
     markup
     javascript))
 

@@ -103,8 +103,8 @@
 			    (local-set-key "\C-cl" 'js-load-file-and-go)))
 
 ;; show indentation guides
-(require 'highlight-indentation)
-(add-hook 'js2-mode-hook 'highlight-indentation-mode)
+;(require 'highlight-indentation)
+;(add-hook 'js2-mode-hook 'highlight-indentation-mode)
 
 (add-hook 'js2-mode-hook 'hs-minor-mode)
 (provide 'javascript)

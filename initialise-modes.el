@@ -16,15 +16,13 @@ your recently and most frequently used commands.")
                     (funcall ,ido-cannot-complete-command)))))
           ad-do-it))
 
-(sr-speedbar-toggle)
-
 (whole-line-or-region-mode t)
-(auto-complete-mode t)
 
-(require 'autopair)
-(autopair-global-mode) ;; enable autopair in all buffers
+(global-company-mode t)
 
 (cua-selection-mode 1)
+
+(smartparens-global-mode t)
 
 ;;; Automatically load changes in file from disc.
 (global-auto-revert-mode t)
